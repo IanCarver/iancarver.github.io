@@ -1,0 +1,36 @@
+1. 
+	#3461fa = 3*16 + 4, 6*16 + 1, 15*16 + 10 = rgb(52, 97, 250)
+
+	#ab34c6 = 10*16 + 11, 3*16 + 4, 12*16 + 6 = rgb(171, 52, 198)
+
+	#feb237 = 15*16 + 14, 11*16 + 2, 3*16 + 7 = rgb(254, 178, 55)
+
+	#ab4571 = 10*16 + 11, 4*16 + 5, 7*16 + 1 = rgb(171, 69, 113)
+
+	#5ab471 = 5*16 + 10, 11*16 + 4, 7*16 + 1 = rgb(90, 180, 113)
+
+2.
+	rgb(213, 22, 2) = 213/16 = 13r5, 22/16 = 1r6, 2/16 = 0r2 = #d51602
+
+	rgb(112, 226, 52) = 112/16 = 7r0, 226/16 = 14r2, 52/16 = 3r4 = #70e234
+	
+	rgb(12, 124, 41) = 12/16 = 0r12, 124/16 = 7r12, 41/16 = 2r9 = #0c7c29
+
+	rgb(223, 32, 113) = 223/16 = 13r15, 31/16 = 1r15, 113/16 = 7r1 = #df1f71
+
+	rgba(112, 23, 124, 0.4) = 112/16 = 7r0, 23/16 = 1r7, 124/16 = 7r12, 0.4*255 = 102, 102/16 = 6r6 = #70177c66
+
+3.
+	<div> = used to seperate part of a document
+	<ul> = used to create an unordered list
+	<style> = used to define internal css styles
+	<table> = used to create a table
+	<form> = used to create a form 
+	
+4. 
+	align = used to changes where an element is displayed
+	href = used to define the address for a link
+	width = specifies the width of an element
+	colspan = specifies the number of columns that a cell should span in a table
+	src = used to define the location of an image or sound
+	

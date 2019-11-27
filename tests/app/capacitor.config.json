@@ -1,0 +1,7 @@
+{
+  "appId": "pic.app",
+  "appName": "picApp",
+  "bundledWebRuntime": true,
+  "npmClient": "npm",
+  "webDir": "www"
+}

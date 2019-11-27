@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">picApp</string>
+    <string name="title_activity_main">picApp</string>
+    <string name="package_name">pic.app</string>
+    <string name="custom_url_scheme">pic.app</string>
+</resources>

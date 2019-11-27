@@ -1,0 +1,47 @@
+body {
+  background-color: peachpuff;
+  text-align:center;
+  color:ForestGreen;
+  font-family: Courier new;
+}
+table {
+  width:95vw;
+}
+ol {
+  text-align:left;
+}
+a {
+  color:blue;
+}
+hr {
+  color:ForestGreen;
+}
+img {
+  border: solid ForestGreen;
+}
+.accordion {
+
+}
+.tab-content {
+  overflow:hidden;
+  max-height: 0vw;
+  transition: all .35s;
+}
+input[name="tc"]:checked ~ .tab-content{
+  max-height:50em;
+}
+input[name='tc']{
+  display:none;
+}
+label{
+  font-weight: bold;
+  cursor:pointer;
+  display: block;
+  border-style: solid;
+  border-color: ForestGreen;
+  margin-bottom: 1vw;
+}
+label:hover{
+  text-shadow: 2px 2px #eee;
+  background-color: #e7c6a8;
+}

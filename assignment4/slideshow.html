@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <title>Slideshow</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    var currentSlide = 1;
+
+    function goToSlide(n){
+      $("button").removeClass("highlight");
+      $("img").hide();
+      $("img:nth-of-type(" + n + ")").fadeIn();
+      currentSlide = n;
+      switch (n) {
+        case 1:
+          $("#first").addClass("highlight");
+          break;
+        case 2:
+        $("#second").addClass("highlight");
+          break;
+        case 3:
+        $("#third").addClass("highlight");
+          break;
+        case 4:
+        $("#fourth").addClass("highlight");
+          break;
+      }
+    }
+    function goPrev(){
+      var nextSlide = currentSlide - 1;
+      if(currentSlide == 1){
+        nextSlide = 4;
+      }
+      goToSlide(nextSlide);
+    }
+    function goNext(){
+      var nextSlide = currentSlide + 1;
+      if(currentSlide == 4){
+        nextSlide = 1;
+      }
+      goToSlide(nextSlide);
+    }
+    function goto(n){
+      var nextSlide = n;
+      goToSlide(nextSlide);
+    }
+  </script>
+
+  <style>
+  #prev{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+  }
+  #next{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+  img{
+    position: absolute;
+    display: block;
+    height: 90%;
+    margin: auto;
+  }
+  #first{
+    position: fixed;
+    right: 80%;
+    bottom: 10px;
+  }
+  #second{
+    position: fixed;
+    right: 60%;
+    bottom: 10px;
+  }
+  #third{
+    position: fixed;
+    right: 40%;
+    bottom: 10px;
+  }
+  #fourth{
+    position: fixed;
+    right: 20%;
+    bottom: 10px;
+  }
+  .highlight{
+    border: 2px solid #4CAF50;
+  }
+  </style>
+
+</head>
+
+<body onload='goToSlide(1)'>
+  <img src="image1.jpg" alt="image1">
+  <img src="image2.jpg" alt="image2">
+  <img src="image3.jpg" alt="image3">
+  <img src="image4.jpg" alt="image4">
+  <button id="prev" onclick = 'goPrev()'>Prev</button>
+  <button id="next" onclick = 'goNext()'>Next</button>
+  <button id="first" class = "picButton" onclick= 'goto(1)'>1</button>
+  <button id="second" class = "picButton" onclick = 'goto(2)'>2</button>
+  <button id="third" class = "picButton" onclick= "goto(3)">3</button>
+  <button id="fourth" class = "picButton" onclick="goto(4)">4</button>
+</body>

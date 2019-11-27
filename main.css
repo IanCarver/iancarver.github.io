@@ -1,0 +1,82 @@
+body {
+  background-color: peachpuff;
+  text-align:center;
+  padding: 5% 20%;
+  color:ForestGreen;
+  font-family: Courier new;
+}
+table {
+  width:100%
+}
+.navPanel {
+  margin-bottom: .25em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navBar {
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: auto;
+}
+.navItem {
+  float: left;
+  font-weight: bold;
+  cursor:pointer;
+  display: block;
+  border-style: solid;
+  border-color: ForestGreen;
+  margin: .25em;
+}
+.navItem:hover{
+  text-shadow: 2px 2px #eee;
+  background-color: #e7c6a8;
+}
+.navLink {
+  display: block;
+  color: ForestGreen;
+  text-align: center;
+  padding: .1em;
+  text-decoration: none;
+}
+ol {
+  text-align:left;
+}
+a {
+  color:blue;
+}
+hr {
+  color:ForestGreen;
+}
+img {
+  border: solid ForestGreen;
+}
+.accordion {
+
+}
+.tab-content {
+  overflow:hidden;
+  max-height: 0em;
+  transition: all .35s;
+}
+input[name="tc"]:checked ~ .tab-content{
+  max-height:50em;
+}
+input[name='tc']{
+  display:none;
+}
+label{
+  font-weight: bold;
+  cursor:pointer;
+  display: block;
+  border-style: solid;
+  border-color: ForestGreen;
+  margin-bottom: .25em;
+  padding: .1em;
+}
+label:hover{
+  text-shadow: 2px 2px #eee;
+  background-color: #e7c6a8;
+}
